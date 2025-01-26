@@ -16,6 +16,61 @@
     <title>LOLOLO</title>
   </head>
   <body>
+    <div class="overlay">
+      <form action="#" class="form">
+        <h2 class="form__title">Contact Us</h2>
+        <span class="form__subtitle">
+          Leave your details and we will contact you shortly!
+        </span>
+        <div class="form__inputs-wrap">
+          <div class="form__field">
+            <label class="form__label" for="name">Your Name</label>
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              id="name"
+              placeholder="John Smith"
+            />
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="phone">Phone number</label>
+            <input
+              class="form__input"
+              type="number"
+              name="phone"
+              id="phone"
+              placeholder="+9 (***) ***-**-**"
+            />
+          </div>
+          <div class="form__field">
+            <label class="form__label" for="email">Email</label>
+            <input
+              class="form__input"
+              type="mail"
+              name="email"
+              id="email"
+              placeholder="name@mail.com"
+            />
+          </div>
+          <div class="form__confirms-wrap">
+            <input type="checkbox" class="form__input-checkbox" />
+            <span class="form__checkbox"></span>
+            <p class="form__confirm-text">
+              I agree to
+              <a href="#" class="form__confirm-link"> the Terms of Access </a>
+              and
+              <a href="#" class="form__confirm-link">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn_form">Contact Us</button>
+        <button class="close-modal" type="button">
+          <img src="./imgs/close.svg" alt="" />
+        </button>
+      </form>
+    </div>
+
     <header id="header" class="header">
       <div class="container">
         <div class="navigate">
@@ -613,5 +668,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./main.js"></script>
   </body>
 </html>
