@@ -221,7 +221,7 @@ a {
 /* video */
 
 .video-wrap {
-  height: 800px;
+  height: 796px;
   width: 100vw;
   background: #000;
   position: relative;
@@ -533,4 +533,78 @@ a {
 
 .terms-itam_link:hover {
   color: var(--black);
+}
+
+/* normal Desctop */
+
+@media (min-width: 1280px) {
+  .container {
+    width: 1140px;
+  }
+
+  .logo {
+    width: 150px;
+    height: 36px;
+  }
+
+  .menu {
+    gap: 20px;
+  }
+
+  .btn_header {
+    font-size: 14px;
+    height: 36px;
+    width: 220px;
+  }
+
+  .main-section__img {
+    height: 500px;
+  }
+
+  .main__title {
+    font-size: 146px;
+  }
+
+  /* .video-wrap {
+    height: 500px;
+  } */
+
+  .section-title-wrap_steps {
+    width: 660px;
+  }
+
+  .section-subtitle_steps {
+    width: auto;
+  }
+
+  .services-item {
+    width: 276px;
+  }
+
+  .services-item__title {
+    font-size: 18px;
+  }
+
+  .onbording {
+    align-items: end;
+  }
+
+  .steps-list {
+    width: 660px;
+  }
+
+  .steps-list__item {
+    width: 320px;
+    height: 440px;
+    gap: 30px;
+  }
+
+  .steps-list__item-number {
+    font-size: 80px;
+  }
+
+  .avatar {
+    width: auto;
+    height: 900px;
+  }
 }
