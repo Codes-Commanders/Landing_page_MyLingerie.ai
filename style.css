@@ -438,6 +438,10 @@ a {
   margin: 0 auto;
 }
 
+.new-collection__video {
+  height: 100%;
+}
+
 .benefit-icon {
   width: 350px;
   height: 350px;
@@ -592,6 +596,7 @@ a {
 .avatar {
   width: 598px;
   height: 1163px;
+  position: relative;
 }
 
 /* servises */
