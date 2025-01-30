@@ -1,6 +1,6 @@
 const inputCheckbox = document.querySelector('.form__input-checkbox');
 const customCheckbox = document.querySelector('.form__checkbox');
-const contactUs = document.querySelector('.btn_header');
+const openFormBtns = document.querySelectorAll('.open-form-btn');
 const overlay = document.querySelector('.overlay');
 const closeBtn = document.querySelector('.close-modal');
 
@@ -30,8 +30,9 @@ const closeontactUsForm = (e) => {
   }
 };
 
+openFormBtns.forEach(btn => btn.addEventListener('click', openContactUsForm))
+
 customCheckbox.addEventListener('click', toggleChecked);
-contactUs.addEventListener('click', openContactUsForm);
 overlay.addEventListener('click', closeontactUsForm);
 closeBtn.addEventListener('click', closeontactUsForm);
 document.addEventListener('keydown', closeontactUsForm);
