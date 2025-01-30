@@ -62,7 +62,7 @@ a {
 .container {
   /* width: 1680px; */
   width: 100vw;
-  padding: 0 30px;
+  padding: 0 120px;
   margin: 0 auto;
 }
 
@@ -304,28 +304,15 @@ a {
 
 /* main-section  */
 
-.bra {
-  width: 300px;
-  height: 300px;
-  border-radius: 50%;
-  border: 1px solid var(--black);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-
-.bra img {
-  width: 146px;
-  height: 258px;
-}
-
 .first-section__bg {
   background: url('./imgs/main-section-bg.png') no-repeat center center / cover;
 }
 
 .main-section__img {
+  position: relative;
+  max-width: 1825px;
   width: 100%;
+  
   /* height: 644px; */
   height: 800px;
   margin: 0 auto;
@@ -334,6 +321,81 @@ a {
 .main-section__img img {
   margin: 0 auto;
 }
+
+.bra {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.bra_black:before, 
+.bra_white:before, 
+.bra_gray:before, 
+.bra_brown:before, 
+.bra_black:after,
+.bra_white:after,
+.bra_gray:after,
+.bra_brown:after {
+  display: block;
+  content: '';
+  border-radius: 50%;
+  position: absolute;
+  inset: 0;
+}
+
+.bra_black:after,
+.bra_white:after {
+  box-shadow: 0 5px 0 var(--light-gray) inset;
+  /* animation: rotate 2s linear infinite; */
+  transform: rotate(90deg);
+}
+
+.bra_gray:after,
+.bra_brown:after {
+  box-shadow: 0 5px 0 var(--light-gray) inset;
+  /* animation: rotate 2s linear infinite; */
+  transform: rotate(-90deg);
+}
+
+
+
+
+.bra img {
+  width: 146px;
+  height: 258px;
+}
+
+
+.bra_black {
+  top: 90px;
+  right: 5px;
+}
+
+.bra_gray {
+  top: 65px;
+  left: 5px;
+  transform: scale(0.9);
+}
+
+.bra_white,
+.bra_brown {
+  top: 410px;
+}
+
+.bra_brown {
+  left: 300px;
+  transform: scale(0.85);
+ }
+
+ .bra_white {
+  right: 300px;
+  transform: scale(0.9);
+ }
 
 .main__title {
   /* font-size: 214px; */
@@ -406,6 +468,10 @@ a {
   transform: translate(-50%, -50%);
 }
 
+.video_phone {
+  width: 366px;
+}
+
 /* anime section */
 
 .section-title-wrap {
@@ -443,14 +509,17 @@ a {
 }
 
 .animation {
-  width: 100%;
+  width: 1530px;
+  margin: 0 auto;
+  /* width: 100%; */
   /* height: 1234px; */
   position: relative;
 }
 
 .new-collection {
   height: 1234px;
-  width: 1030px;
+  width: 100%;
+  /* width: 1030px; */
   margin: 0 auto;
 }
 
@@ -488,9 +557,8 @@ a {
 }
 
 .sizing {
-  bottom: 0;
-  left: 0;
-  transform: translateX(30%);
+  bottom: 134px;
+  left: -56px;
 }
 
 .fit {
@@ -499,9 +567,8 @@ a {
 }
 
 .shopping {
-  top: 50%;
+  top: 30%;
   right: 0;
-  transform: translateY(-50%);
 }
 
 /* "WHY" section */
