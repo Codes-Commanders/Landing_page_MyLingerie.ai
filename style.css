@@ -334,14 +334,14 @@ a {
   position: absolute;
 }
 
-.bra_black:before, 
-.bra_white:before, 
-.bra_gray:before, 
-.bra_brown:before, 
-.bra_black:after,
-.bra_white:after,
-.bra_gray:after,
-.bra_brown:after {
+.bra_1:before, 
+.bra_2:before, 
+.bra_3:before, 
+.bra_4:before, 
+.bra_1:after,
+.bra_2:after,
+.bra_3:after,
+.bra_4:after {
   display: block;
   content: '';
   border-radius: 50%;
@@ -349,15 +349,15 @@ a {
   inset: 0;
 }
 
-.bra_black:after,
-.bra_white:after {
+.bra_2:after,
+.bra_1:after {
   box-shadow: 0 5px 0 var(--light-gray) inset;
   /* animation: rotate 2s linear infinite; */
   transform: rotate(90deg);
 }
 
-.bra_gray:after,
-.bra_brown:after {
+.bra_3:after,
+.bra_4:after {
   box-shadow: 0 5px 0 var(--light-gray) inset;
   /* animation: rotate 2s linear infinite; */
   transform: rotate(-90deg);
@@ -383,28 +383,29 @@ a {
 }
 
 
-.bra_black {
+.bra_2 {
   top: 90px;
   right: 5px;
 }
 
-.bra_gray {
+.bra_3 {
   top: 65px;
   left: 5px;
   transform: scale(0.9);
 }
 
-.bra_white,
-.bra_brown {
+.bra_1,
+.bra_4 {
   top: 410px;
 }
 
-.bra_brown {
+.bra_4 {
   left: 300px;
   transform: scale(0.85);
  }
 
- .bra_white {
+
+ .bra_1 {
   right: 300px;
   transform: scale(0.9);
  }
@@ -524,15 +525,14 @@ a {
 .animation {
   width: 1530px;
   margin: 0 auto;
-  /* width: 100%; */
-  /* height: 1234px; */
   position: relative;
 }
 
 .new-collection {
-  height: 1234px;
+  max-height: 1234px;
+  height: 100vh;
+  /* height: 1234px; */
   width: 100%;
-  /* width: 1030px; */
   margin: 0 auto;
 }
 
@@ -545,7 +545,7 @@ a {
   height: 350px;
   position: absolute;
   border-radius: 50%;
-  border: 5px solid var(--black);
+  border: 1px solid var(--black);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -655,7 +655,7 @@ a {
   opacity: 0;
   z-index: -1;
   transition: 0.3s;
-  animation: changeOpacity 12s infinite;
+  animation: changeOpacity 8s infinite;
 }
 
 
@@ -666,17 +666,17 @@ a {
 
 .steps-list__item:nth-child(2):after {
   background: url('./imgs/bg_card_2.png') no-repeat center center / cover;
-  animation-delay: 3s; 
+  animation-delay: 2s; 
 }
 
 .steps-list__item:nth-child(3):after {
   background: url('./imgs/bg_card_3.png') no-repeat top center / cover;
-  animation-delay: 6s; 
+  animation-delay: 4s; 
 }
 
 .steps-list__item:nth-child(4):after {
   background: url('./imgs/bg_card_4.png') no-repeat center center / cover;
-  animation-delay: 9s; 
+  animation-delay: 6s; 
 }
 
 @keyframes changeOpacity {
@@ -811,18 +811,68 @@ a {
 
 /* normal Desctop */
 
-@media (max-width: 1280px) {
+@media (max-width: 1800px) {
+  .bra_1 {
+    left: 50%;
+    transform: translateX(70%) scale(0.9);
+  }
+
+  .bra_4 {
+    left: 50%;
+    transform: translateX(-165%) scale(0.85);
+  }
+
+}
+
+@media(max-width: 1530px) {
+
+  .animation {
+    /* width: 1300px; */
+    width: 100%;
+    /* height: 920px; */
+  }
+
+  .benefit-icon {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.6);
+    
+  }
+
+  .shopping {
+    top: 16%;
+    left: 25%;
+  }
+
+  .fit {
+    top: 44%;
+    left: 80%;
+  }
+
+  .sizing {
+    top: 75%;
+    left: 30%;
+  }
+}
+
+@media (max-width: 1500px) {
+
+  .section {
+    padding: 40px 0;
+  }
   .container {
-    width: 1140px;
+    /* width: 1140px; */
+    padding: 0 60px;
+    /* border: 1px solid red; */
+  }
+  .container_center {
+    /* width: 1140px; */
+
   }
 
   .logo {
     width: 150px;
     height: 36px;
-  }
-
-  .menu {
-    gap: 20px;
   }
 
   .btn_header {
@@ -831,12 +881,9 @@ a {
     width: 220px;
   }
 
-  .main-section__img {
-    height: 500px;
-  }
 
   .main__title {
-    font-size: 146px;
+    /* font-size: 146px; */
   }
 
   .section-title-wrap_steps {
@@ -860,12 +907,13 @@ a {
   }
 
   .steps-list {
-    width: 660px;
+    /* width: 660px; */
   }
 
   .steps-list__item {
-    width: 320px;
-    height: 440px;
+    /* width: 320px; */
+    /* height: 440px; */
+    height: 400px;
     gap: 30px;
   }
 
@@ -874,7 +922,7 @@ a {
   }
 
   .avatar {
-    width: auto;
-    height: 900px;
+    width: 400px;
+    height: 780px;
   }
 }
