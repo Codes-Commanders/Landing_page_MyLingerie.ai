@@ -12,7 +12,6 @@ document.addEventListener('DOMContentLoaded', function () {
   const form = document.querySelector('.form');
   const inputWraps = form.querySelectorAll('.form__field');
   const spanCheckbox = form.querySelector('.form__checkbox');
-  const formBtn = form.querySelector('.btn_form');
   const burgerMenu = document.querySelector('.burger-menu');
   const menu = document.querySelector('.menu');
   const sections = document.querySelectorAll('[data-section]');
